@@ -346,3 +346,352 @@ distance()
 advance()
 next()
 prev()
+
+
+
+# STL Time Complexity Cheat Sheet
+
+This cheat sheet covers the most commonly used STL containers and algorithms along with their average time complexities.
+
+---
+
+# Vector
+
+Dynamic Array
+
+| Function | Complexity |
+|-----------|------------|
+| push_back() | O(1) |
+| pop_back() | O(1) |
+| front() | O(1) |
+| back() | O(1) |
+| size() | O(1) |
+| empty() | O(1) |
+| at() | O(1) |
+| operator[] | O(1) |
+| insert() | O(n) |
+| erase() | O(n) |
+| clear() | O(n) |
+
+---
+
+# Deque
+
+Double Ended Queue
+
+| Function | Complexity |
+|-----------|------------|
+| push_back() | O(1) |
+| push_front() | O(1) |
+| pop_back() | O(1) |
+| pop_front() | O(1) |
+| front() | O(1) |
+| back() | O(1) |
+| operator[] | O(1) |
+| insert() | O(n) |
+| erase() | O(n) |
+
+---
+
+# List
+
+Doubly Linked List
+
+| Function | Complexity |
+|-----------|------------|
+| push_back() | O(1) |
+| push_front() | O(1) |
+| pop_back() | O(1) |
+| pop_front() | O(1) |
+| insert() | O(1) |
+| erase() | O(1) |
+| remove() | O(n) |
+| sort() | O(n log n) |
+| reverse() | O(n) |
+
+---
+
+# Stack
+
+LIFO (Last In First Out)
+
+| Function | Complexity |
+|-----------|------------|
+| push() | O(1) |
+| pop() | O(1) |
+| top() | O(1) |
+| size() | O(1) |
+| empty() | O(1) |
+
+---
+
+# Queue
+
+FIFO (First In First Out)
+
+| Function | Complexity |
+|-----------|------------|
+| push() | O(1) |
+| pop() | O(1) |
+| front() | O(1) |
+| back() | O(1) |
+| size() | O(1) |
+| empty() | O(1) |
+
+---
+
+# Priority Queue
+
+Heap Based Container
+
+| Function | Complexity |
+|-----------|------------|
+| push() | O(log n) |
+| pop() | O(log n) |
+| top() | O(1) |
+| size() | O(1) |
+| empty() | O(1) |
+
+---
+
+# Set
+
+Unique Elements + Sorted
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(log n) |
+| erase() | O(log n) |
+| find() | O(log n) |
+| count() | O(log n) |
+| lower_bound() | O(log n) |
+| upper_bound() | O(log n) |
+| size() | O(1) |
+
+---
+
+# Multiset
+
+Duplicate Elements Allowed + Sorted
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(log n) |
+| erase() | O(log n) |
+| find() | O(log n) |
+| count() | O(log n + k) |
+| lower_bound() | O(log n) |
+| upper_bound() | O(log n) |
+| equal_range() | O(log n) |
+
+(k = frequency of element)
+
+---
+
+# Unordered Set
+
+Hash Table + Unique Elements
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(1) Average |
+| erase() | O(1) Average |
+| find() | O(1) Average |
+| count() | O(1) Average |
+
+Worst Case: O(n)
+
+---
+
+# Unordered Multiset
+
+Hash Table + Duplicate Elements
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(1) Average |
+| erase() | O(1) Average |
+| find() | O(1) Average |
+| count() | O(k) |
+
+Worst Case: O(n)
+
+---
+
+# Map
+
+Key-Value Pair + Sorted Keys
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(log n) |
+| erase() | O(log n) |
+| find() | O(log n) |
+| count() | O(log n) |
+| lower_bound() | O(log n) |
+| upper_bound() | O(log n) |
+| operator[] | O(log n) |
+
+---
+
+# Multimap
+
+Duplicate Keys Allowed + Sorted
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(log n) |
+| erase() | O(log n) |
+| find() | O(log n) |
+| count() | O(log n + k) |
+| equal_range() | O(log n) |
+
+---
+
+# Unordered Map
+
+Hash Table + Unique Keys
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(1) Average |
+| erase() | O(1) Average |
+| find() | O(1) Average |
+| count() | O(1) Average |
+| operator[] | O(1) Average |
+
+Worst Case: O(n)
+
+---
+
+# Unordered Multimap
+
+Hash Table + Duplicate Keys
+
+| Function | Complexity |
+|-----------|------------|
+| insert() | O(1) Average |
+| erase() | O(1) Average |
+| find() | O(1) Average |
+| count() | O(k) |
+
+Worst Case: O(n)
+
+---
+
+# Pair
+
+Stores Two Values
+
+| Operation | Complexity |
+|------------|------------|
+| first | O(1) |
+| second | O(1) |
+| make_pair() | O(1) |
+
+---
+
+# Tuple
+
+Stores Multiple Values
+
+| Operation | Complexity |
+|------------|------------|
+| get<index>() | O(1) |
+| make_tuple() | O(1) |
+| tie() | O(1) |
+
+---
+
+# Common STL Algorithms
+
+## Sorting
+
+| Function | Complexity |
+|-----------|------------|
+| sort() | O(n log n) |
+| stable_sort() | O(n log n) |
+| reverse() | O(n) |
+
+---
+
+## Searching
+
+| Function | Complexity |
+|-----------|------------|
+| find() | O(n) |
+| count() | O(n) |
+| binary_search() | O(log n) |
+| lower_bound() | O(log n) |
+| upper_bound() | O(log n) |
+
+---
+
+## Min / Max
+
+| Function | Complexity |
+|-----------|------------|
+| max_element() | O(n) |
+| min_element() | O(n) |
+| max() | O(1) |
+| min() | O(1) |
+
+---
+
+## Permutations
+
+| Function | Complexity |
+|-----------|------------|
+| next_permutation() | O(n) |
+| prev_permutation() | O(n) |
+
+---
+
+## Numeric Algorithms
+
+| Function | Complexity |
+|-----------|------------|
+| accumulate() | O(n) |
+| partial_sum() | O(n) |
+| iota() | O(n) |
+
+---
+
+# Internal Data Structures
+
+| Container | Internal Data Structure |
+|------------|------------------------|
+| vector | Dynamic Array |
+| deque | Dynamic Array Blocks |
+| list | Doubly Linked List |
+| stack | Deque (default) |
+| queue | Deque (default) |
+| priority_queue | Heap |
+| set | Red-Black Tree |
+| multiset | Red-Black Tree |
+| map | Red-Black Tree |
+| multimap | Red-Black Tree |
+| unordered_set | Hash Table |
+| unordered_multiset | Hash Table |
+| unordered_map | Hash Table |
+| unordered_multimap | Hash Table |
+
+---
+
+# Quick Memory Trick
+
+set               -> Unique + Sorted
+
+multiset          -> Duplicate + Sorted
+
+unordered_set     -> Unique + Unsorted
+
+unordered_multiset-> Duplicate + Unsorted
+
+map               -> Unique Keys + Sorted
+
+multimap          -> Duplicate Keys + Sorted
+
+unordered_map     -> Unique Keys + Unsorted
+
+unordered_multimap-> Duplicate Keys + Unsorted
